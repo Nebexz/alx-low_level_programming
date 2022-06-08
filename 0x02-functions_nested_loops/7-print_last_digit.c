@@ -1,26 +1,15 @@
 #include "main.h"
 /**
- * _abs - returns -n if n is less than 0 otherwise n
- * @n: integer to be tested
- * Return: _abs(n)
- */
-int _abs(int n)
-{
-if (n >= 0)
-return (n);
-else
-return (-1 * n);
-}
-/**
- * print_last_digit - prints the last digit of a number
- * @n: integer whose last digit is to be printed
- * Return: lastdigit
- */
+*print_last_digit - function that print last digit of a number
+*@n: number to be targeted
+*Return: returns 0
+*/
 int print_last_digit(int n)
 {
-int lastDigit;
+int lastdigit = n % 10;
+if (lastdigit < 0)
+lastdigit *= -1;
 
-lastDigit = _abs((n % 10));
-_putchar(lastDigit + 48);
-return (lastDigit);
+_putchar (lastdigit + '0');
+return (lastdigit);
 }
