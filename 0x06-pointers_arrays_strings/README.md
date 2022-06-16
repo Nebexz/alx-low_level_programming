@@ -1,1 +1,1 @@
-# Learning Pointers, arrays and strings in C
+0x06. C - More pointers, arrays and strings
